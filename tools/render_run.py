@@ -79,6 +79,7 @@ def render(folder, case_id):
                                     f"{metadata['repeats']} repeat{'s' if metadata['repeats'] != 1 else ''}: {metadata['planned_requests']} planned calls"),
         ('Completed and failed calls', f"{summary['completed_requests']} completed, {summary['failed_requests']} failed"),
         ('Generation settings', f"max {metadata['max_tokens']} output tokens, temperature {metadata['temperature']}"),
+        ('Gap between calls', f"{metadata['gap_seconds']:g} seconds"),
         ('Prefix SHA-256 (first 12 characters)', f"`{metadata['prefix_sha256'][:12]}`"),
         ('Estimated upper token cost with 10% allowance', usd(metadata['estimated_upper_token_cost_with_allowance_usd'])),
         ('Rates per million tokens', f"input {rate(rates['input'])}, five-minute write {rate(rates['cache_write_5m'])}, "
