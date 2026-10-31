@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" compressed="false">
+  <diagram id="aws-lab-architecture" name=" Lab Architecture">
+    <mxGraphModel dx="1200" dy="630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="630" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=#AAB7B8;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="40" y="80" width="410" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" vertex="1" value="Local workstation" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="65" y="90.1" width="267.75" height="37.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=#232F3E;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="680" y="80" width="480" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" vertex="1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2240px%22%20height%3D%2240px%22%20viewBox%3D%220%200%2040%2040%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Ctitle%3EIcon-Architecture-Group%2F32%2FAWS-Cloud_32%3C%2Ftitle%3E%0A%20%20%20%20%3Cg%20id%3D%22Icon-Architecture-Group%2F32%2FAWS-Cloud_32%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle%22%20fill%3D%22%23242F3E%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2240%22%20height%3D%2240%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M28.993%2C27.9952689%20L11.487%2C27.9762689%20C9.121%2C27.9742689%207.154%2C26.1292689%207.012%2C23.7752689%20C7.004%2C23.6522689%207%2C23.5262689%207%2C23.3972689%20C7%2C20.2992689%209.091%2C19.2872689%2010.337%2C18.9592689%20C10.577%2C18.8962689%2010.735%2C18.6662689%2010.707%2C18.4192689%20C10.676%2C18.1492689%2010.659%2C17.8752689%2010.659%2C17.5962689%20C10.659%2C15.1322689%2012.308%2C12.4822689%2014.415%2C11.5632689%20C15.359%2C11.1502689%2016.232%2C10.9862689%2017.023%2C10.9862689%20C19.276%2C10.9862689%2020.867%2C12.3152689%2021.561%2C13.0332689%20C22.329%2C13.8262689%2022.927%2C14.8382689%2023.34%2C16.0422689%20C23.4%2C16.2192689%2023.555%2C16.3472689%2023.74%2C16.3742689%20C23.918%2C16.4012689%2024.109%2C16.3232689%2024.219%2C16.1712689%20C24.807%2C15.3502689%2025.766%2C14.9822689%2026.659%2C15.2392689%20C27.782%2C15.5602689%2028.516%2C16.7272689%2028.62%2C18.3072689%20C28.578%2C18.5762689%2028.759%2C18.8292689%2029.027%2C18.8772689%20C30.222%2C19.0892689%2033%2C19.9572689%2033%2C23.4402689%20C33%2C27.5892689%2029.114%2C27.9822689%2028.993%2C27.9952689%20M29.594%2C17.9742689%20C29.379%2C16.0672689%2028.4%2C14.6962689%2026.934%2C14.2782689%20C25.899%2C13.9822689%2024.811%2C14.2452689%2023.989%2C14.9502689%20C23.553%2C13.9362689%2022.979%2C13.0602689%2022.28%2C12.3382689%20C20.023%2C10.0052689%2016.933%2C9.37226889%2014.014%2C10.6462689%20C11.531%2C11.7302689%209.659%2C14.7182689%209.659%2C17.5962689%20C9.659%2C17.7702689%209.665%2C17.9432689%209.676%2C18.1142689%20C8.319%2C18.5732689%206%2C19.8752689%206%2C23.3972689%20C6%2C23.5492689%206.004%2C23.6962689%206.014%2C23.8382689%20C6.188%2C26.7162689%208.593%2C28.9732689%2011.486%2C28.9762689%20L29.034%2C28.9932689%20C29.084%2C28.9892689%2034%2C28.5192689%2034%2C23.4402689%20C34%2C19.5022689%2031.003%2C18.3142689%2029.594%2C17.9742689%22%20id%3D%22Fill-1%22%20fill%3D%22%23FFFFFF%22%3E%3C%2Fpath%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E;">
+          <mxGeometry x="700" y="99" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="1" vertex="1" value="AWS Cloud" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="747" y="96.1" width="141.75" height="37.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="75" y="150" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="1" vertex="1" value="Reference" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="91.75" y="154.8" width="121.5" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="101.35" y="186.4" as="sourcePoint" />
+            <mxPoint x="203.65" y="186.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n10" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="101.35" y="195.5" as="sourcePoint" />
+            <mxPoint x="203.65" y="195.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="101.35" y="204.6" as="sourcePoint" />
+            <mxPoint x="172.65" y="204.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n12" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="260" y="150" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="1" vertex="1" value="Cases" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="303.75" y="154.8" width="67.5" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286.35" y="186.4" as="sourcePoint" />
+            <mxPoint x="388.65" y="186.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n15" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286.35" y="195.5" as="sourcePoint" />
+            <mxPoint x="388.65" y="195.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n16" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286.35" y="204.6" as="sourcePoint" />
+            <mxPoint x="357.65" y="204.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n17" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=#545B64;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="75" y="285" width="340" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" parent="1" vertex="1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2248px%22%20height%3D%2248px%22%20viewBox%3D%220%200%2048%2048%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Ctitle%3EIcon-Resource%2FGeneral-Resource%2FRes_Client_48_Light%3C%2Ftitle%3E%0A%20%20%20%20%3Cg%20id%3D%22Icon-Resource%2FGeneral-Resource%2FRes_Client_48%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M42.299%2C38.773%20L42.299%2C40.696%20C42.299%2C41.134%2041.945%2C41.49%2041.506%2C41.49%20L30.762%2C41.49%20C30.323%2C41.49%2029.968%2C41.134%2029.968%2C40.696%20L29.968%2C38.773%20C29.968%2C38.335%2030.323%2C37.98%2030.762%2C37.98%20L41.506%2C37.98%20C41.945%2C37.98%2042.299%2C38.335%2042.299%2C38.773%20L42.299%2C38.773%20Z%20M43.797%2C42.399%20C43.797%2C42.754%2043.508%2C43.044%2043.153%2C43.044%20L4.645%2C43.044%20C4.289%2C43.044%204%2C42.754%204%2C42.399%20L4%2C37.011%20C4%2C36.656%204.289%2C36.367%204.645%2C36.367%20L43.153%2C36.367%20C43.508%2C36.367%2043.797%2C36.656%2043.797%2C37.011%20L43.797%2C42.399%20Z%20M43.153%2C34.367%20L4.645%2C34.367%20C3.187%2C34.367%202%2C35.553%202%2C37.011%20L2%2C42.399%20C2%2C43.857%203.187%2C45.044%204.645%2C45.044%20L43.153%2C45.044%20C44.611%2C45.044%2045.797%2C43.857%2045.797%2C42.399%20L45.797%2C37.011%20C45.797%2C35.553%2044.611%2C34.367%2043.153%2C34.367%20L43.153%2C34.367%20Z%20M7.501%2C27.21%20L40.264%2C27.21%20L40.264%2C7.502%20L7.501%2C7.502%20L7.501%2C27.21%20Z%20M40.842%2C5.502%20L6.924%2C5.502%20C6.14%2C5.502%205.501%2C6.139%205.501%2C6.923%20L5.501%2C27.788%20C5.501%2C28.572%206.14%2C29.21%206.924%2C29.21%20L40.842%2C29.21%20C41.626%2C29.21%2042.264%2C28.572%2042.264%2C27.788%20L42.264%2C6.923%20C42.264%2C6.139%2041.626%2C5.502%2040.842%2C5.502%20L40.842%2C5.502%20Z%20M43.797%2C30.067%20C43.797%2C30.422%2043.508%2C30.711%2043.153%2C30.711%20L4.645%2C30.711%20C4.289%2C30.711%204%2C30.422%204%2C30.067%20L4%2C4.644%20C4%2C4.289%204.289%2C4%204.645%2C4%20L43.153%2C4%20C43.508%2C4%2043.797%2C4.289%2043.797%2C4.644%20L43.797%2C30.067%20Z%20M43.153%2C2%20L4.645%2C2%20C3.187%2C2%202%2C3.186%202%2C4.644%20L2%2C30.067%20C2%2C31.525%203.187%2C32.711%204.645%2C32.711%20L43.153%2C32.711%20C44.611%2C32.711%2045.797%2C31.525%2045.797%2C30.067%20L45.797%2C4.644%20C45.797%2C3.186%2044.611%2C2%2043.153%2C2%20L43.153%2C2%20Z%22%20id%3D%22Fill-3%22%20fill%3D%22%23232F3D%22%3E%3C%2Fpath%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E;">
+          <mxGeometry x="100" y="309" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="1" vertex="1" value="Python lab" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=22;fontStyle=0;">
+          <mxGeometry x="202.5" y="310.2" width="165.0" height="39.6" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" parent="1" vertex="1" value="boto3" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="251.25" y="344.8" width="67.5" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" parent="1" source="n7" target="n17" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5032258064516129;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.22941176470588234;entryY=0.0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="153" y="220" as="sourcePoint" />
+            <mxPoint x="153" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n22" parent="1" source="n12" target="n17" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5032258064516129;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.7735294117647059;entryY=0.0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="338" y="220" as="sourcePoint" />
+            <mxPoint x="338" y="285" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n23" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="165" y="470" width="175" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" parent="1" vertex="1" value="Local results" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="164.75" y="474.8" width="175.5" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="194.75" y="506.4" as="sourcePoint" />
+            <mxPoint x="310.25" y="506.4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n26" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="194.75" y="515.5" as="sourcePoint" />
+            <mxPoint x="310.25" y="515.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n27" parent="1" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.4;endArrow=none;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="194.75" y="524.6" as="sourcePoint" />
+            <mxPoint x="275.25" y="524.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n28" parent="1" source="n17" target="n23" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.5205882352941177;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.49714285714285716;entryY=0.0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252" y="400" as="sourcePoint" />
+            <mxPoint x="252" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n29" parent="1" vertex="1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2280px%22%20height%3D%2280px%22%20viewBox%3D%220%200%2080%2080%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Ctitle%3EIcon-Architecture%2F64%2FArch_AWS-IAM-Identity-Center_64%3C%2Ftitle%3E%0A%20%20%20%20%3Cg%20id%3D%22Icon-Architecture%2F64%2FArch_AWS-IAM-Identity-Center_64%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Icon-Architecture-BG%2F64%2FSecurity-Identity-Compliance%22%20fill%3D%22%23DD344C%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2280%22%20height%3D%2280%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M67.438%2C62.3245478%20L52.56%2C47.4465478%20C52.251%2C47.1385478%2052.178%2C46.6655478%2052.379%2C46.2795478%20C54.457%2C42.2765478%2053.659%2C37.2315478%2050.439%2C34.0115478%20C48.143%2C31.7155478%2044.972%2C30.6245478%2041.748%2C31.0125478%20C38.518%2C31.4035478%2035.67%2C33.2675478%2033.936%2C36.1285478%20C31.898%2C39.4875478%2031.989%2C43.7965478%2034.166%2C47.1075478%20C37.187%2C51.7025478%2043.076%2C53.2915478%2047.864%2C50.8085478%20C48.251%2C50.6085478%2048.722%2C50.6805478%2049.032%2C50.9895478%20L51.5%2C53.4575478%20C51.687%2C53.6445478%2051.792%2C53.8995478%2051.792%2C54.1645478%20L51.792%2C57.4075478%20L55.035%2C57.4075478%20C55.299%2C57.4075478%2055.554%2C57.5125478%2055.742%2C57.6995478%20L57.157%2C59.1135478%20C57.344%2C59.3015478%2057.45%2C59.5555478%2057.45%2C59.8215478%20L57.45%2C63.0635478%20L60.692%2C63.0635478%20C60.958%2C63.0635478%2061.211%2C63.1695478%2061.399%2C63.3565478%20L63.254%2C65.2125478%20L67.196%2C65.4755478%20L67.438%2C62.3245478%20Z%20M69.467%2C62.0195478%20L69.114%2C66.6155478%20C69.074%2C67.1395478%2068.636%2C67.5385478%2068.118%2C67.5385478%20C68.095%2C67.5385478%2068.073%2C67.5385478%2068.05%2C67.5365478%20L62.747%2C67.1825478%20C62.504%2C67.1665478%2062.277%2C67.0635478%2062.106%2C66.8925478%20L60.278%2C65.0635478%20L56.45%2C65.0635478%20C55.897%2C65.0635478%2055.45%2C64.6165478%2055.45%2C64.0635478%20L55.45%2C60.2355478%20L54.621%2C59.4075478%20L50.792%2C59.4075478%20C50.24%2C59.4075478%2049.792%2C58.9595478%2049.792%2C58.4075478%20L49.792%2C54.5785478%20L48.12%2C52.9055478%20C42.546%2C55.3915478%2035.941%2C53.4495478%2032.494%2C48.2065478%20C29.896%2C44.2545478%2029.791%2C39.1065478%2032.225%2C35.0915478%20C34.281%2C31.7015478%2037.665%2C29.4915478%2041.507%2C29.0275478%20C45.349%2C28.5655478%2049.12%2C29.8645478%2051.853%2C32.5975478%20C55.506%2C36.2505478%2056.536%2C41.8835478%2054.475%2C46.5335478%20L69.177%2C61.2355478%20C69.383%2C61.4425478%2069.49%2C61.7285478%2069.467%2C62.0195478%20L69.467%2C62.0195478%20Z%20M45.423%2C41.3455478%20C45.423%2C40.6775478%2045.163%2C40.0495478%2044.69%2C39.5775478%20C44.217%2C39.1045478%2043.589%2C38.8445478%2042.922%2C38.8445478%20C42.255%2C38.8445478%2041.627%2C39.1045478%2041.155%2C39.5765478%20C40.18%2C40.5515478%2040.18%2C42.1375478%2041.155%2C43.1125478%20C42.129%2C44.0875478%2043.715%2C44.0875478%2044.69%2C43.1125478%20L44.69%2C43.1125478%20C45.163%2C42.6395478%2045.423%2C42.0125478%2045.423%2C41.3455478%20L45.423%2C41.3455478%20Z%20M46.104%2C38.1625478%20C46.955%2C39.0125478%2047.423%2C40.1425478%2047.423%2C41.3455478%20C47.423%2C42.5465478%2046.955%2C43.6765478%2046.104%2C44.5265478%20L46.104%2C44.5275478%20C45.227%2C45.4045478%2044.075%2C45.8425478%2042.922%2C45.8425478%20C41.77%2C45.8425478%2040.618%2C45.4045478%2039.741%2C44.5265478%20C37.987%2C42.7715478%2037.987%2C39.9165478%2039.741%2C38.1625478%20C40.59%2C37.3125478%2041.72%2C36.8445478%2042.922%2C36.8445478%20C44.125%2C36.8445478%2045.254%2C37.3125478%2046.104%2C38.1625478%20L46.104%2C38.1625478%20Z%20M22.001%2C44.9215478%20L28%2C44.9215478%20L28%2C46.9215478%20L22%2C46.9215478%20C16.146%2C46.9085478%2011.326%2C42.7565478%2011.024%2C37.4675478%20C11.011%2C37.2175478%2011%2C36.9865478%2011%2C36.7545478%20C11%2C30.2305478%2015.627%2C27.8055478%2018.351%2C26.9445478%20C18.333%2C26.6565478%2018.324%2C26.3655478%2018.324%2C26.0695478%20C18.324%2C20.7195478%2022.081%2C15.1815478%2027.063%2C13.1885478%20C32.87%2C10.8445478%2039.028%2C12.0105478%2043.526%2C16.3065478%20C44.713%2C17.4265478%2046.231%2C19.1005478%2047.295%2C21.1415478%20C48.431%2C20.1435478%2049.714%2C19.6545478%2051.183%2C19.6545478%20C54.086%2C19.6545478%2057.34%2C21.9905478%2057.931%2C27.0965478%20C63.95%2C28.4715478%2067%2C31.7745478%2067%2C36.9215478%20C67%2C42.3485478%2063.778%2C45.9895478%2058.161%2C46.9085478%20L57.838%2C44.9345478%20C61.105%2C44.4005478%2065%2C42.5755478%2065%2C36.9215478%20C65%2C32.5405478%2062.397%2C29.9925478%2056.808%2C28.9035478%20C56.361%2C28.8155478%2056.029%2C28.4365478%2056.001%2C27.9815478%20C55.777%2C24.2565478%2053.795%2C21.6545478%2051.183%2C21.6545478%20C49.848%2C21.6545478%2048.801%2C22.2345478%2047.789%2C23.5355478%20C47.566%2C23.8215478%2047.209%2C23.9635478%2046.848%2C23.9105478%20C46.491%2C23.8555478%2046.19%2C23.6115478%2046.063%2C23.2725478%20C45.191%2C20.9425478%2043.454%2C18.9875478%2042.15%2C17.7575478%20C38.231%2C14.0155478%2032.872%2C13.0035478%2027.808%2C15.0445478%20C23.61%2C16.7235478%2020.324%2C21.5665478%2020.324%2C26.0695478%20C20.324%2C26.5745478%2020.354%2C27.0605478%2020.417%2C27.5545478%20C20.421%2C27.5915478%2020.423%2C27.6295478%2020.424%2C27.6675478%20L20.424%2C27.6695478%20L20.424%2C27.6715478%20L20.424%2C27.6735478%20L20.424%2C27.6755478%20L20.424%2C27.6755478%20L20.424%2C27.6775478%20L20.424%2C27.6775478%20L20.424%2C27.6785478%20L20.424%2C27.6795478%20L20.424%2C27.6815478%20C20.424%2C28.1865478%2020.05%2C28.6085478%2019.564%2C28.6775478%20C17.065%2C29.3115478%2013%2C31.1975478%2013%2C36.7545478%20C13%2C36.9515478%2013.01%2C37.1485478%2013.02%2C37.3375478%20C13.262%2C41.5865478%2017.208%2C44.9115478%2022.001%2C44.9215478%20L22.001%2C44.9215478%20Z%22%20id%3D%22AWS-IAM-Identity-Center_Icon_64_Squid%22%20fill%3D%22%23FFFFFF%22%3E%3C%2Fpath%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E;">
+          <mxGeometry x="790" y="150" width="64" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="n30" parent="1" vertex="1" value="AWS IAM&#10;Identity Center" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="818.875" y="163.1" width="362.25" height="37.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" parent="1" target="n17" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=5 4;entryX=0.9411764705882353;entryY=0.0;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="822" y="215" as="sourcePoint" />
+            <mxPoint x="395" y="285" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="822" y="246" />
+              <mxPoint x="395" y="246" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n32" parent="1" vertex="1" value="SSO credentials" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="479.75" y="208.8" width="202.5" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n33" parent="1" vertex="1" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=white;strokeColor=#00A88F;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=21;fontStyle=0;">
+          <mxGeometry x="760" y="287" width="355" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n34" parent="1" vertex="1" value="" style="shape=image;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2280px%22%20height%3D%2280px%22%20viewBox%3D%220%200%2080%2080%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Ctitle%3EIcon-Architecture%2F64%2FArch_Amazon-Bedrock_64%3C%2Ftitle%3E%0A%20%20%20%20%3Cg%20id%3D%22Icon-Architecture%2F64%2FArch_Amazon-Bedrock_64%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Icon-Architecture-BG%2F64%2FMachine-Learning%22%20fill%3D%22%2301A88D%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Crect%20id%3D%22Rectangle%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2280%22%20height%3D%2280%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Icon-Service%2F64%2FAmazon-Bedrock_64%22%20transform%3D%22translate%2812.000000%2C%2012.000000%29%22%20fill%3D%22%23FFFFFF%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M52%2C26.9998918%20C50.897%2C26.9998918%2050%2C26.1028918%2050%2C24.9998918%20C50%2C23.8968918%2050.897%2C22.9998918%2052%2C22.9998918%20C53.103%2C22.9998918%2054%2C23.8968918%2054%2C24.9998918%20C54%2C26.1028918%2053.103%2C26.9998918%2052%2C26.9998918%20L52%2C26.9998918%20Z%20M20.113%2C53.9078918%20L16.865%2C52.0138918%20L23.53%2C47.8478918%20L22.47%2C46.1518918%20L14.913%2C50.8748918%20L9%2C47.4258918%20L9%2C38.5348918%20L14.555%2C34.8318918%20L13.445%2C33.1678918%20L7.959%2C36.8248918%20L2%2C33.4198918%20L2%2C28.5798918%20L8.496%2C24.8678918%20L7.504%2C23.1318918%20L2%2C26.2768918%20L2%2C22.5798918%20L8%2C19.1518918%20L14%2C22.5798918%20L14%2C26.4338918%20L9.485%2C29.1428918%20L10.515%2C30.8568918%20L15%2C28.1658918%20L19.485%2C30.8568918%20L20.515%2C29.1428918%20L16%2C26.4338918%20L16%2C22.5348918%20L21.555%2C18.8318918%20C21.833%2C18.6458918%2022%2C18.3338918%2022%2C17.9998918%20L22%2C10.9998918%20L20%2C10.9998918%20L20%2C17.4648918%20L14.959%2C20.8248918%20L9%2C17.4198918%20L9%2C8.57389181%20L14%2C5.65789181%20L14%2C13.9998918%20L16%2C13.9998918%20L16%2C4.49089181%20L20.113%2C2.09189181%20L28%2C4.72089181%20L28%2C33.4338918%20L13.485%2C42.1428918%20L14.515%2C43.8568918%20L28%2C35.7658918%20L28%2C51.2788918%20L20.113%2C53.9078918%20Z%20M50%2C37.9998918%20C50%2C39.1028918%2049.103%2C39.9998918%2048%2C39.9998918%20C46.897%2C39.9998918%2046%2C39.1028918%2046%2C37.9998918%20C46%2C36.8968918%2046.897%2C35.9998918%2048%2C35.9998918%20C49.103%2C35.9998918%2050%2C36.8968918%2050%2C37.9998918%20L50%2C37.9998918%20Z%20M40%2C47.9998918%20C40%2C49.1028918%2039.103%2C49.9998918%2038%2C49.9998918%20C36.897%2C49.9998918%2036%2C49.1028918%2036%2C47.9998918%20C36%2C46.8968918%2036.897%2C45.9998918%2038%2C45.9998918%20C39.103%2C45.9998918%2040%2C46.8968918%2040%2C47.9998918%20L40%2C47.9998918%20Z%20M39%2C7.99989181%20C39%2C6.89689181%2039.897%2C5.99989181%2041%2C5.99989181%20C42.103%2C5.99989181%2043%2C6.89689181%2043%2C7.99989181%20C43%2C9.10289181%2042.103%2C9.99989181%2041%2C9.99989181%20C39.897%2C9.99989181%2039%2C9.10289181%2039%2C7.99989181%20L39%2C7.99989181%20Z%20M52%2C20.9998918%20C50.141%2C20.9998918%2048.589%2C22.2798918%2048.142%2C23.9998918%20L30%2C23.9998918%20L30%2C18.9998918%20L41%2C18.9998918%20C41.553%2C18.9998918%2042%2C18.5518918%2042%2C17.9998918%20L42%2C11.8578918%20C43.72%2C11.4108918%2045%2C9.85789181%2045%2C7.99989181%20C45%2C5.79389181%2043.206%2C3.99989181%2041%2C3.99989181%20C38.794%2C3.99989181%2037%2C5.79389181%2037%2C7.99989181%20C37%2C9.85789181%2038.28%2C11.4108918%2040%2C11.8578918%20L40%2C16.9998918%20L30%2C16.9998918%20L30%2C3.99989181%20C30%2C3.56889181%2029.725%2C3.18789181%2029.316%2C3.05089181%20L20.316%2C0.050891811%20C20.042%2C-0.039108189%2019.744%2C-0.00910818904%2019.496%2C0.135891811%20L7.496%2C7.13589181%20C7.188%2C7.31489181%207%2C7.64489181%207%2C7.99989181%20L7%2C17.4198918%20L0.504%2C21.1318918%20C0.192%2C21.3098918%200%2C21.6408918%200%2C21.9998918%20L0%2C33.9998918%20C0%2C34.3588918%200.192%2C34.6898918%200.504%2C34.8678918%20L7%2C38.5798918%20L7%2C47.9998918%20C7%2C48.3548918%207.188%2C48.6848918%207.496%2C48.8638918%20L19.496%2C55.8638918%20C19.65%2C55.9538918%2019.825%2C55.9998918%2020%2C55.9998918%20C20.106%2C55.9998918%2020.213%2C55.9828918%2020.316%2C55.9488918%20L29.316%2C52.9488918%20C29.725%2C52.8118918%2030%2C52.4308918%2030%2C51.9998918%20L30%2C39.9998918%20L37%2C39.9998918%20L37%2C44.1418918%20C35.28%2C44.5888918%2034%2C46.1418918%2034%2C47.9998918%20C34%2C50.2058918%2035.794%2C51.9998918%2038%2C51.9998918%20C40.206%2C51.9998918%2042%2C50.2058918%2042%2C47.9998918%20C42%2C46.1418918%2040.72%2C44.5888918%2039%2C44.1418918%20L39%2C38.9998918%20C39%2C38.4478918%2038.553%2C37.9998918%2038%2C37.9998918%20L30%2C37.9998918%20L30%2C32.9998918%20L42.5%2C32.9998918%20L44.638%2C35.8498918%20C44.239%2C36.4718918%2044%2C37.2068918%2044%2C37.9998918%20C44%2C40.2058918%2045.794%2C41.9998918%2048%2C41.9998918%20C50.206%2C41.9998918%2052%2C40.2058918%2052%2C37.9998918%20C52%2C35.7938918%2050.206%2C33.9998918%2048%2C33.9998918%20C47.316%2C33.9998918%2046.682%2C34.1878918%2046.119%2C34.4918918%20L43.8%2C31.3998918%20C43.611%2C31.1478918%2043.314%2C30.9998918%2043%2C30.9998918%20L30%2C30.9998918%20L30%2C25.9998918%20L48.142%2C25.9998918%20C48.589%2C27.7198918%2050.141%2C28.9998918%2052%2C28.9998918%20C54.206%2C28.9998918%2056%2C27.2058918%2056%2C24.9998918%20C56%2C22.7938918%2054.206%2C20.9998918%2052%2C20.9998918%20L52%2C20.9998918%20Z%22%20id%3D%22Fill-1%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E;">
+          <mxGeometry x="789" y="319" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n35" parent="1" vertex="1" value="Amazon Bedrock" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=22;fontStyle=0;">
+          <mxGeometry x="873.5" y="338.2" width="231.0" height="39.6" as="geometry" />
+        </mxCell>
+        <mxCell id="n36" parent="1" vertex="1" value="Managed prompt cache" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#EAF8F4;strokeColor=#00A88F;strokeWidth=1.5;fontFamily=Arial;fontColor=#333333;fontSize=19;fontStyle=0;">
+          <mxGeometry x="802" y="453" width="270" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n37" parent="1" source="n17" target="n33" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;exitX=1.0;exitY=0.21739130434782608;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.092;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="310" as="sourcePoint" />
+            <mxPoint x="760" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n38" parent="1" vertex="1" value="CountTokens / Converse" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=16;fontStyle=0;">
+          <mxGeometry x="452.0" y="274.6" width="264.0" height="28.8" as="geometry" />
+        </mxCell>
+        <mxCell id="n39" parent="1" source="n33" target="n17" edge="1" style="edgeStyle=none;rounded=0;html=0;strokeColor=#666666;strokeWidth=1.5;endArrow=block;endFill=1;exitX=0.0;exitY=0.368;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.0;entryY=0.8173913043478261;entryDx=0;entryDy=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="379" as="sourcePoint" />
+            <mxPoint x="415" y="379" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n40" parent="1" vertex="1" value="Answer + token usage" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=18;fontStyle=0;">
+          <mxGeometry x="449.0" y="390.8" width="270.0" height="32.4" as="geometry" />
+        </mxCell>
+        <mxCell id="n41" parent="1" vertex="1" value="IAM Identity Center shown for the article’s SSO profile option." style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacing=0;fontFamily=Arial;fontColor=#333333;fontSize=16;fontStyle=0;">
+          <mxGeometry x="222.0" y="597.6" width="756.0" height="28.8" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M 0 0 L 8 4 L 0 8 z" fill="#666666"/></marker></defs>
+<rect width="1200" height="600" fill="white"/>
+<rect x="60" y="105" width="250" height="95" fill="#F5F5F5" stroke="#666666" stroke-width="1.5"/>
+<text x="185.0" y="152.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#333333" font-weight="normal"><tspan x="185.0" y="159.64">Prices + CountTokens</tspan></text>
+<rect x="60" y="320" width="250" height="110" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.5"/>
+<text x="185.0" y="375.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#333333" font-weight="normal"><tspan x="185.0" y="368.49">Same prompt</tspan><tspan x="185.0" y="395.78999999999996">and model</tspan></text>
+<rect x="430" y="235" width="285" height="100" fill="#D5E8D4" stroke="#82B366" stroke-width="1.5"/>
+<text x="572.5" y="285.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#333333" font-weight="normal"><tspan x="572.5" y="278.49">Explicit</tspan><tspan x="572.5" y="305.78999999999996">Checkpoint included</tspan></text>
+<rect x="430" y="415" width="285" height="100" fill="#F5F5F5" stroke="#666666" stroke-width="1.5"/>
+<text x="572.5" y="465.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#333333" font-weight="normal"><tspan x="572.5" y="458.49">Unmarked</tspan><tspan x="572.5" y="485.78999999999996">Checkpoint omitted</tspan></text>
+<rect x="855" y="235" width="285" height="100" fill="#F5F5F5" stroke="#666666" stroke-width="1.5"/>
+<text x="997.5" y="285.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#333333" font-weight="normal"><tspan x="997.5" y="291.8">Usage · Cost · Duration</tspan></text>
+<rect x="855" y="415" width="285" height="100" fill="#F5F5F5" stroke="#666666" stroke-width="1.5"/>
+<text x="997.5" y="465.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#333333" font-weight="normal"><tspan x="997.5" y="471.8">Checks + Human review</tspan></text>
+<polyline points="185,200 185,320" fill="none" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="207" y="262" text-anchor="start" font-family="Arial, sans-serif" font-size="18" fill="#333333" font-weight="normal"><tspan x="207" y="268.12">Budget check</tspan></text>
+<polyline points="310,375 365,375 365,285 430,285" fill="none" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="365,375 365,465 430,465" fill="none" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="715,285 855,285" fill="none" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="715,465 785,465 785,285" fill="none" stroke="#666666" stroke-width="1.5"/>
+<polyline points="998,335 998,415" fill="none" stroke="#666666" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#333333" font-weight="normal"><tspan x="600" y="566.12">Unmarked requests may still receive cache hits.</tspan></text>
+</svg>

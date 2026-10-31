@@ -1,0 +1,14 @@
+{
+  "verified": false,
+  "verified_on": null,
+  "model_id": "us.anthropic.claude-sonnet-4-6",
+  "region": "us-east-1",
+  "source_url": "https://aws.amazon.com/bedrock/pricing/",
+  "note": "Illustrative USD rates only. Replace all four numbers with the actual Standard-tier rates for your model, geography and five-minute cache before a live run. These are not a current AWS price quote.",
+  "usd_per_million_tokens": {
+    "input": 3.0,
+    "cache_write_5m": 3.75,
+    "cache_read": 0.3,
+    "output": 15.0
+  }
+}

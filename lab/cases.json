@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "decline-01",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 400
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 900
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-01",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 880
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 900
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-01",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 400
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "id": "silent-01",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 900
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-01",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 50,
+        "successes": 20
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-01",
+        "window": "matched-hour",
+        "attempts": 1000,
+        "successes": 900
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-02",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 440
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 990
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-02",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 968
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 990
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-02",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 990
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "silent-02",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 990
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-02",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 51,
+        "successes": 21
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-02",
+        "window": "matched-hour",
+        "attempts": 1100,
+        "successes": 990
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4118,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-03",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 480
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 1080
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-03",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 1056
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 1080
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-03",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 480
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "id": "silent-03",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 1080
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-03",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 52,
+        "successes": 22
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-03",
+        "window": "matched-hour",
+        "attempts": 1200,
+        "successes": 1080
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4231,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-04",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 520
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1170
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-04",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1144
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1170
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-04",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1170
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "silent-04",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1170
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-04",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 53,
+        "successes": 23
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-04",
+        "window": "matched-hour",
+        "attempts": 1300,
+        "successes": 1170
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.434,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-05",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 560
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 1260
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-05",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 1232
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 1260
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-05",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 560
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "id": "silent-05",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 1260
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-05",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 54,
+        "successes": 24
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-05",
+        "window": "matched-hour",
+        "attempts": 1400,
+        "successes": 1260
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4444,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-06",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 600
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1350
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-06",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1320
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1350
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-06",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1350
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "silent-06",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1350
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-06",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 55,
+        "successes": 25
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-06",
+        "window": "matched-hour",
+        "attempts": 1500,
+        "successes": 1350
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4545,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-07",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 640
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 1440
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-07",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 1408
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 1440
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-07",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 640
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "id": "silent-07",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 1440
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-07",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 56,
+        "successes": 26
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-07",
+        "window": "matched-hour",
+        "attempts": 1600,
+        "successes": 1440
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4643,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-08",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 680
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1530
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-08",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1496
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1530
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-08",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1530
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "silent-08",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1530
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-08",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 57,
+        "successes": 27
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-08",
+        "window": "matched-hour",
+        "attempts": 1700,
+        "successes": 1530
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4737,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-09",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 720
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 1620
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-09",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 1584
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 1620
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-09",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 720
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1"
+      ]
+    }
+  },
+  {
+    "id": "silent-09",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 1620
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-09",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 58,
+        "successes": 28
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-09",
+        "window": "matched-hour",
+        "attempts": 1800,
+        "successes": 1620
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4828,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "decline-10",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 760
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1710
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": 0.4,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "normal-10",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1672
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1710
+      }
+    ],
+    "expected": {
+      "decision": "normal",
+      "current_success_rate": 0.88,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "missing-10",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1710
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "silent-10",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 0,
+        "successes": 0
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1710
+      }
+    ],
+    "expected": {
+      "decision": "investigate",
+      "current_success_rate": null,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "id": "small_sample-10",
+    "question": "Assess this provider using the reference rules. Return the required JSON record.",
+    "evidence": [
+      {
+        "id": "E1",
+        "type": "current",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 59,
+        "successes": 29
+      },
+      {
+        "id": "E2",
+        "type": "baseline",
+        "provider": "provider-10",
+        "window": "matched-hour",
+        "attempts": 1900,
+        "successes": 1710
+      }
+    ],
+    "expected": {
+      "decision": "insufficient_evidence",
+      "current_success_rate": 0.4915,
+      "required_evidence_ids": [
+        "E1",
+        "E2"
+      ]
+    }
+  }
+]
